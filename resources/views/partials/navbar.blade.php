@@ -1,5 +1,5 @@
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top fs-5">
           <div class="container-fluid">
               <a class="navbar-brand mx-5" href="/">
                 <img src="/img/logo.jpg" style="width: 80px; height:80px;">
@@ -8,12 +8,15 @@
               <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

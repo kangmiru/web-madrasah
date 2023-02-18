@@ -10,6 +10,7 @@
 
     {{-- My CSS --}}
     <link rel="stylesheet" href="/css/background.css">
+    <link rel="stylesheet" href="/css/cover.css">
 
     <title>Madrasah Alif | </title>
   </head>
