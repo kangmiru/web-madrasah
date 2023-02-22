@@ -1,0 +1,55 @@
+.selengkapnya{
+    width: 160px;
+    transition: all 0.5s;
+}
+
+.selengkapnya span{
+    transition: 0.5s;
+}
+
+.selengkapnya:hover span{
+    padding-right: 25px;
+}
+
+.selengkapnya span:after{
+    content: '\00bb';
+    opacity: 0 ;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.selengkapnya:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.selengkapnya-cover{
+    width: 210px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.selengkapnya-cover span{
+    transition: 0.5s;
+}
+
+.selengkapnya-cover:hover span{
+    padding-right: 25px;
+}
+
+.selengkapnya-cover span:after{
+    content: '\00bb';
+    opacity: 0 ;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.selengkapnya-cover:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.alasan:hover {
+    background-color: chartreuse;
+    transition: 0.5s;
+}

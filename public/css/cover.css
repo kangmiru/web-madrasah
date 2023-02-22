@@ -58,3 +58,9 @@ body {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.review {
+  background-color: aliceblue;
+  height:400px;
+  width: 800px;
+}
