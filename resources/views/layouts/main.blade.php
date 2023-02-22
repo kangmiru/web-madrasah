@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/background.css">
     <link rel="stylesheet" href="/css/cover.css">
     <link rel="stylesheet" href="/css/tombol.css">
+    <link rel="stylesheet" href="/css/foto.css">
 
     <title>Madrasah Alif | </title>
   </head>
@@ -36,7 +37,8 @@
         </div>
     </section>
 
-  @yield('container')
+    @yield('content')
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 

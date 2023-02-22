@@ -60,7 +60,14 @@ body {
 }
 
 .review {
-  background-color: aliceblue;
+  background-color:rgba(255, 255, 255, .15);
+  backdrop-filter:blur(5px);
   height:400px;
   width: 800px;
+}
+
+.alumni {
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/mad1.jpg);
+  background-size: cover;
+  background-position: center;
 }

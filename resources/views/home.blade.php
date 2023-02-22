@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('container')
+@section('content')
     <!-- cover web -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -106,7 +106,7 @@
                 <h2 class="mt-4">Kenapa Madrasah Alif?</h2>
             </div>
         </div>
-        <div class="row mb-5 pb-5">
+        <div class="row pb-5">
             <div class="col-md-4">
                 <div class="card alasan" style="width: 18rem;">
                     <div class="card-body">
@@ -134,23 +134,27 @@
 
     <!-- kata alumni -->
     <div class="alumni">
-        <h2 class="text-center">Kata Alumni</h2>
+        <h2 class="text-center py-5">Kata Alumni</h2>
         <div class="container">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="review"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="review"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="review"></div>
+            <div class="row">
+                <div class="col-md-8 mx-auto d-block mb-5">
+                    <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review text-center pt-3 mb-3">
+                                    <h4>Nama</h4>
+                                    <p>pekerjaan/jenjang lanjutan</p>
+                                    <img src="/img/oke1.png" class="foto-alumni">
+                                    <p>lulusan</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
