@@ -18,10 +18,10 @@
   </head>
   <body>
 
-  @include('partials.navbar')
-
-  <!-- background bubble -->
-  <section class="sticky">
+    @include('partials.navbar')
+    
+<!-- background bubble -->
+<section class="sticky">
         <div class="bubbles">
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -34,11 +34,12 @@
             <div class="bubble"></div>
             <div class="bubble"></div>
             
-        </div>
-    </section>
-
+          </div>
+        </section>
+        
+    <div>
     @yield('content')
-
+    </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
 

@@ -57,7 +57,7 @@
 
     <!-- profil singkat -->
     <div class="profil" style="background-color: #fff;">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center me-0">
             <div class="col-md-5 my-5">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>
@@ -76,7 +76,7 @@
 
     <!-- bagian sekolah -->
     <div class="bagian">
-        <div class="row text-center my-5">
+        <div class="row text-center my-5 me-0">
             <div class="col-md-3" style="border-right: 2px solid black;">
                 <h5 style="margin-left:9px">Menjadi Bagian Alif Al-ittifaq Boarding School</h5>
             </div>
@@ -101,12 +101,12 @@
     <!-- alasan -->
     <div class="alasan" style="background-color:#fff;">
     <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3 me-0">
             <div class="col">
                 <h2 class="mt-4">Kenapa Madrasah Alif?</h2>
             </div>
         </div>
-        <div class="row pb-5">
+        <div class="row pb-5 me-0">
             <div class="col-md-4">
                 <div class="card alasan" style="width: 18rem;">
                     <div class="card-body">
@@ -136,7 +136,7 @@
     <div class="alumni">
         <h2 class="text-center py-5">Kata Alumni</h2>
         <div class="container">
-            <div class="row">
+            <div class="row me-0">
                 <div class="col-md-8 mx-auto d-block mb-5">
                     <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
                         <div class="carousel-indicators">
