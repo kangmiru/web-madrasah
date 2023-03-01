@@ -133,11 +133,11 @@
     </div>
 
     <!-- kata alumni -->
-    <div class="alumni">
+    <div class="alumni pb-5">
         <h2 class="text-center py-5">Kata Alumni</h2>
-        <div class="container review pb-5">
+        <div class="container review">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators ">
+                <div class="carousel-indicators" style="">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -149,7 +149,7 @@
                             <p>pekerjaan/jenjang lanjutan</p>
                             <img src="/img/oke1.png" class="foto-alumni">
                             <p>lulusan</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
                          </div>
                     </div>
                     <div class="carousel-item">
@@ -158,34 +158,19 @@
                             <p>pekerjaan/jenjang lanjutan</p>
                             <img src="/img/oke1.png" class="foto-alumni">
                             <p>lulusan</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
                          </div>
                     </div>
             </div>
-                    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner review me-0">
-                            <div class="carousel-item active">
-                                <div class=" text-center pt-3 mb-3">
-                                    <h4>Nama</h4>
-                                    <p>pekerjaan/jenjang lanjutan</p>
-                                    <img src="/img/oke1.png" class="foto-alumni">
-                                    <p>lulusan</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
-                                </div>
-                            </div>
-                        </div>
-                   </div> -->
         </div>
     </div>
 
     <!-- sekolah kami -->
-    <div class="sekolah">
-        <h2></h2>
+    <div class="sekolah my-5 pt-2">
+        <h2 class="text-center mt-5">Sekolah Kami</h2>
+        <div class="row">
+            
+        </div>
     </div>
 
 @endsection

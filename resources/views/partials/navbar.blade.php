@@ -1,5 +1,5 @@
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top fs-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top fs-5">
           <div class="container-fluid">
               <a class="navbar-brand mx-5" href="/">
                 <img src="/img/logo1.png" style="width: 80px; height:50px;">
