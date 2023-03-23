@@ -1,0 +1,16 @@
+@media screen and (max-width: 580px) {
+    .review {
+        font-size: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .profil img {
+        width: auto;
+    }
+
+    .sekolah-card {
+        margin-left:3px;
+    }
+}

@@ -3,3 +3,7 @@
     width: auto;
     border-radius: 100%;
 }
+
+.profil img {
+    max-width: 375px;
+}
