@@ -53,3 +53,56 @@
     background-color: chartreuse;
     transition: 0.5s;
 }
+
+.more {
+    width: 160px;
+    transition: all 0.5s;
+    background-color: transparent;
+    border-color: #0d6efd;
+}
+
+.more span{
+    transition: 0.5s;
+}
+
+.more:hover span{
+    padding-right: 25px;
+}
+
+.more span:after{
+    content: '\00bb';
+    opacity: 0 ;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.more:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.more-cover{
+    width: 210px;
+    transition: all 0.5s;
+    border: none;
+}
+
+.more-cover span{
+    transition: 0.5s;
+}
+
+.more-cover:hover span{
+    padding-right: 25px;
+}
+
+.more-cover span:after{
+    content: '\00bb';
+    opacity: 0 ;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.more-cover:hover span:after{
+    opacity: 1;
+    right: 0;
+}

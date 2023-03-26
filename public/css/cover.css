@@ -72,7 +72,10 @@ body {
   background-position: center;
 }
 
-.sekolah {
+.sekolah,
+.berita,
+.artikel,
+.galeri {
   background-image: none;
   background-color: #fff;
 }

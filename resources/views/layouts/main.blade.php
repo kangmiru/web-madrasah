@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/css/tombol.css">
     <link rel="stylesheet" href="/css/foto.css">
     <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/kontak.css">
 
     <title>Madrasah Alif | </title>
   </head>
@@ -48,6 +49,8 @@
     <div>
     @yield('content')
     </div>
+
+    @include('partials.kontak')
 
   <!-- Optional JavaScript; choose one of the two! -->
 

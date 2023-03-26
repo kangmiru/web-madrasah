@@ -1,3 +1,4 @@
+<!-- navbar -->
 @extends('layouts.main')
 
 @section('content')
@@ -243,15 +244,171 @@
                     </div>
                 </div>
             </div>
+            <div class="row me-0">
+                <div class="col text-center">
+                    <button class="more btn text-center">
+                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                            <span>Lebih Banyak </span> 
+                        </a>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- berita madrasah -->
     <section class="berita py-5">
+        <hr>
         <div class="container">
-            <div class="row">
+            <div class="row me-0 my-5">
                 <div class="col">
                     <h2 class="text-center">Berita Terkini</h2>
+                </div>
+            </div>
+            <div class="row me-0 d-flex justify-content-center ms-auto">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row me-0 pt-5">
+                <div class="col text-center">
+                    <button class="more btn text-center">
+                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                            <span>Lebih Banyak </span> 
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- artikel madrasah -->
+    <section class="artikel py-5">
+        <hr>
+        <div class="container">
+            <div class="row me-0 my-5">
+                <div class="col">
+                    <h2 class="text-center">Artikel Madrasah</h2>
+                </div>
+            </div>
+            <div class="row me-0 d-flex justify-content-center ms-auto">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row me-0 pt-5">
+                <div class="col text-center">
+                    <button class="more btn text-center">
+                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                            <span>Lebih Banyak </span> 
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- geleri madrasah -->
+    <section class="galeri py-5">
+        <hr>
+        <div class="container">
+            <div class="row me-0 my-5">
+                <div class="col-md-4">
+                    <h4>Galeri Madrasah</h4>
+                    <p>Lihat galeri untuk melihat kegiatan yang dilaksanakan di madrasah Alif ABS</p>
+                    <button class="more btn text-center">
+                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                            <span>Lebih Banyak </span> 
+                        </a>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 23rem;">
+                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                    </div>
                 </div>
             </div>
         </div>
