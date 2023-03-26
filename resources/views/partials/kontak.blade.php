@@ -1,10 +1,10 @@
 <section class="kontak">
-    <div class="row me-0 alamat bg-light">
-        <div class="col-6 ms-0 lokasi text-center bg-secondary" style="font-size : 20px;">
-            <p class="text-white my-auto"><i class="bi bi-geo-alt-fill"></i> Ciwidey, Jawa Barat</p>
+    <div class="row me-0">
+        <div class="col-md-4 d-flex justify-content-center">
+            <img src="/../img/logo1.png" alt="">
         </div>
-        <!-- <div class="col-6 ms-0 email text-center bg-dark" style="font-size : 20px;">
-            <p class="text-white my-auto"><i class="bi bi-geo-alt-fill"></i>madrasahalif@gmail.com</p>
-        </div> -->
+        <div class="col-md-3 d-flex justify-content-center">
+            
+        </div>
     </div>
 </section>

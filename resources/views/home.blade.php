@@ -267,7 +267,21 @@
             </div>
             <div class="row me-0 d-flex justify-content-center ms-auto">
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card card-berita">
+                        <img src="/img/mad1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="selengkapnya btn btn-primary text-center">
+                                <a href="" style="text-decoration:none; color:white;">
+                                    <span>selengkapnya </span> 
+                                </a>
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card card-berita" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -281,21 +295,7 @@
                     </div>  
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card card-berita" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -332,7 +332,7 @@
             </div>
             <div class="row me-0 d-flex justify-content-center ms-auto">
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -346,7 +346,7 @@
                     </div>  
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -360,7 +360,7 @@
                     </div>  
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card" style="width: 23rem;">
+                    <div class="card" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
@@ -391,7 +391,7 @@
         <hr>
         <div class="container">
             <div class="row me-0 my-5">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     <h4>Galeri Madrasah</h4>
                     <p>Lihat galeri untuk melihat kegiatan yang dilaksanakan di madrasah Alif ABS</p>
                     <button class="more btn text-center">
@@ -400,13 +400,13 @@
                         </a>
                     </button>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 23rem;">
+                <div class="col-md-4 mb-3">
+                    <div class="card" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 23rem;">
+                <div class="col-md-4 mb-3">
+                    <div class="card" >
                         <img src="/img/mad1.jpg" class="card-img-top" alt="...">
                     </div>
                 </div>
