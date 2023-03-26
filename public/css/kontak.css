@@ -1,0 +1,12 @@
+.lokasi {
+    border-bottom: 10px solid;
+    height: 0;
+}
+
+.email {
+    transform: perspective(10px) rotateX(-1deg);
+}
+
+.alamat {
+    border-top: 1px solid black;
+}
