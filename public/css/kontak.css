@@ -6,3 +6,16 @@
 .kontak img {
     width:250px;
 }
+
+.medsos {
+    background: radial-gradient(circle at 29.18% -7.21%, #ffe35a 0, #ffe949 5.56%, #ffef39 11.11%, #fff329 16.67%, #fff61a 22.22%, #eaf80f 27.78%, #cbf911 33.33%, #a8f81d 38.89%, #7df62c 44.44%, #3cf23c 50%, #00ee4d 55.56%, #00e961 61.11%, #00e575 66.67%, #00e18c 72.22%, #00dda3 77.78%, #00dabc 83.33%, #00d7d6 88.89%, #00d5f0 94.44%, #00d3ff 100%);
+    font-size: 25px;
+    padding: 0px 5px;
+    border-radius: 25%;
+}
+
+.media {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
