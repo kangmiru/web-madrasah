@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+        "title" => "Home",
+        "active" => "home"
+    ]);
+});
+
+// route ke halaman profile
+Route::get('/profil', function (){
+    return view('profil', [
+        "title" => "Profile",
+        "active" => "profile"
+    ]);
 });

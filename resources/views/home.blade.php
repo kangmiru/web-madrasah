@@ -80,26 +80,26 @@
     </section>
 
     <!-- bagian sekolah -->
-    <section>
-        <div class="bagian">
-            <div class="row text-center my-5 me-0">
+    <section class="bagian">
+        <div class="container">
+            <div class="row text-center my-5 me-0 ">
                 <div class="col-md-3" style="border-right: 2px solid black;">
                     <h5 style="margin-left:9px">Menjadi Bagian Alif Al-ittifaq Boarding School</h5>
                 </div>
                 
                 <div class="col-md-3" style="border-right: 2px solid black;">
                     <img src="" alt="">
-                    <p>10</p>
+                    <p class="fw-bold fs-4 count" data-val="1000">000</p>
                 </div>
                 
                 <div class="col-md-3" style="border-right: 2px solid black;">
                     <img src="" alt="">
-                    <p>10</p>
+                    <p class="fw-bold fs-4 count" data-val="1000">000</p>
                 </div>
                 
                 <div class="col-md-3">
                     <img src="" alt="">
-                    <p>10</p>
+                    <p class="fw-bold fs-4 count" data-val="1000">000</p>
                 </div>
             </div>
         </div>

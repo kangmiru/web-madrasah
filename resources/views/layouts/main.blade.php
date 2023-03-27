@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/kontak.css">
 
-    <title>Madrasah Alif | </title>
+    <title>Madrasah Alif | {{ $title }} </title>
   </head>
   <body>
 
@@ -70,6 +70,7 @@
     {{-- My Script --}}
     <script src="/js/navbar.js"></script>
     <script src="/js/owl-carousel.js"></script>
+    <script src="/js/counter.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
