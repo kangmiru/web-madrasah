@@ -23,7 +23,7 @@ Route::get('/', function () {
 // route ke halaman profile
 Route::get('/profil', function (){
     return view('profil', [
-        "title" => "Profile",
-        "active" => "profile"
+        "title" => "Profil",
+        "active" => "profil"
     ]);
 });
