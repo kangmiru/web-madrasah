@@ -84,3 +84,9 @@ body {
   background: linear-gradient(85deg, #ffff00 0, #ffff00 7.14%, #ffff00 14.29%, #ffff00 21.43%, #efff00 28.57%, #caff11 35.71%, #a3ff2c 42.86%, #79f23c 50%, #48e349 57.14%, #00d654 64.29%, #00cb5f 71.43%, #00c26a 78.57%, #00ba76 85.71%, #00b482 92.86%, #00b090 100%);
   padding: 10px 0px;
 }
+
+.profil-bg {
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/mad1.jpg);
+  background-size: cover;
+  background-position: center;
+}

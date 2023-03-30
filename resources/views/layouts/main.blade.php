@@ -30,7 +30,7 @@
     @include('partials.navbar')
     
 <!-- background bubble -->
-<section class="sticky">
+<!-- <section class="sticky">
         <div class="bubbles">
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -44,7 +44,7 @@
             <div class="bubble"></div>
             
           </div>
-        </section>
+        </section> -->
         
     <div>
     @yield('content')

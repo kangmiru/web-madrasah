@@ -108,3 +108,13 @@ body,html{
       transform:translateX(-200px);
     }
   }
+
+.profil {
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+.blank {
+  height: 70px;
+  background-color: green;
+}
