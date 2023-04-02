@@ -47,7 +47,7 @@
                   <a class="nav-link" href="#">Profil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-success " href="#">PSB</a>
+                    <a class="nav-link btn btn-warning " href="#">PSB</a>
                   </li>
               </ul>
               </div>
