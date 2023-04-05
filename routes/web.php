@@ -27,3 +27,11 @@ Route::get('/profil', function (){
         "active" => "profil"
     ]);
 });
+
+// route ke halaman madrasah
+Route::get('/madrasah/madrasah', function(){
+    return view('/madrasah/madrasah', [
+        "title" => "Madrasah",
+        "active" => "madrasah"
+    ]);
+});

@@ -20,10 +20,10 @@
                       Pendidikan
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">RA Alif ABS</a></li>
-                      <li><a class="dropdown-item" href="#">MI Alif ABS</a></li>
-                      <li><a class="dropdown-item" href="#">MTs Alif ABS</a></li>
-                      <li><a class="dropdown-item" href="#">MA Alif ABS</a></li>
+                      <li><a class="dropdown-item" href="/madrasah/madrasah">RA Alif ABS</a></li>
+                      <li><a class="dropdown-item" href="/madrasah/">MI Alif ABS</a></li>
+                      <li><a class="dropdown-item" href="/madrasah/">MTs Alif ABS</a></li>
+                      <li><a class="dropdown-item" href="/madrasah/">MA Alif ABS</a></li>
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
