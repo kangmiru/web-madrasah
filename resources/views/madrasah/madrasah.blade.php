@@ -14,7 +14,7 @@
         </div>
         <div class="row py-3">
             <div class="col-md-6 profil-madrasah" data-aos="fade-up" data-aos-duration="2000">
-                <p>{{ $teks }}</p>
+                <p></p>
             </div>
 
             <div class="col-md-6 jejak-madrasah">
