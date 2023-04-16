@@ -106,3 +106,8 @@
     opacity: 1;
     right: 0;
 }
+
+.pendidikan a{
+    color:black;
+    text-decoration: none;
+}

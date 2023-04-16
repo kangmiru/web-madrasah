@@ -15,15 +15,10 @@
                   <li class="nav-item">
                   <a class="nav-link {{ ($active =="profil") ? 'active' : '' }}" href="/profil">Profil</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pendidikan" id="navbarDropdownMenuLink" >
                       Pendidikan
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      @foreach ($madrasah as $m)
-                      <li><a class="dropdown-item" href="/madrasah/{{ ($m["slug"]) }}">{{ ($m["tingkat"]) }}</a></li>
-                      @endforeach
-                    </ul>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

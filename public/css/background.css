@@ -109,7 +109,8 @@ body,html{
     }
   }
 
-.profil {
+.profil,
+.pendidikan {
   background-color: #fff;
   padding-top: 100px;
 }
