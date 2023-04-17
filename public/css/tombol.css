@@ -111,3 +111,13 @@
     color:black;
     text-decoration: none;
 }
+
+.btn-profil {
+    border: white solid 2px;
+    color:white;
+}
+
+.btn-profil:hover{
+    background-color: white;
+    color:black;
+}

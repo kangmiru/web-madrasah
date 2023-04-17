@@ -16,17 +16,15 @@
                   <a class="nav-link {{ ($active =="profil") ? 'active' : '' }}" href="/profil">Profil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/pendidikan" id="navbarDropdownMenuLink" >
+                    <a class="nav-link {{ ($active =="pendidikan") ? 'active' : '' }}" href="/pendidikan" id="navbarDropdownMenuLink" >
                       Pendidikan
                     </a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item">
+                    <a class="nav-link {{ ($active =="lainnya") ? 'active' : '' }}" href="/lainnya" id="navbarDropdownMenuLink" >
                       Unit Lainnya
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Asrama</a></li>
-                    </ul>
+                  </li>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#">Berita</a>
@@ -36,9 +34,6 @@
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#">Kontak</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#">Profil</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link btn btn-warning " href="#">PSB</a>

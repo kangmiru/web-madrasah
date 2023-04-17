@@ -41,7 +41,7 @@
                         <h1>MA ALIF ABS</h1>
                         <a href="" class="lead" style="color: white; text-decoration:none;">Ciwidey, Bandung, Jawa Barat</a>
                         <p class="lead">
-                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-info mt-3"><span>Selengkapnya </span></button>
+                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-light mt-3"><span>Selengkapnya </span></button>
                         </p>
                 </div>
             </div>

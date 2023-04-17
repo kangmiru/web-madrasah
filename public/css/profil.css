@@ -11,3 +11,7 @@
     border:solid 2px black;
     border-radius: 5%;
 }
+
+.img-profil {
+    filter: brightness(50%);
+}

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Lainnya;
 use App\Models\LatarBelakang;
 use Illuminate\Support\Facades\Route;
 
@@ -40,10 +41,18 @@ Route::get('/pendidikan', function(){
 
 // route ke halaman madrasah
 Route::get('/madrasah/{slug}', function($slug){
-    
     return view('/madrasah/madrasah', [
         "title" => "Madrasah",
         "active" => "madrasah",
         "profil" => LatarBelakang::find($slug)
+    ]);
+});
+
+// route ke halaman lainnya
+Route::get('/lainnya',function(){
+    return view ('/lainnya/lainnya',[
+        "title" => "Unit Lainnya",
+        "active" => "lainnya",
+        "units" => Lainnya::all()
     ]);
 });

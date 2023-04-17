@@ -12,7 +12,7 @@
                 <h3>Madrasah Alif</h3>
             </div>
         </div>
-        <div class="row py-3">
+        <div class="row py-3 me-0">
             <div class="col-md-6 profil-madrasah" data-aos="fade-up" data-aos-duration="2000">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae distinctio ducimus, enim aspernatur non, aut optio molestiae quasi, repudiandae nostrum quia. Dolores distinctio consequatur possimus quibusdam consequuntur in repudiandae dolorum unde delectus maiores, omnis modi, deleniti nobis, illum impedit atque iusto autem. Vero dolorum suscipit voluptatibus labore vel, ut tenetur neque, quam doloribus unde iste perspiciatis aliquid laudantium, impedit ab? Voluptate perspiciatis labore ut asperiores placeat perferendis ducimus corporis hic ratione pariatur! Voluptatum doloribus non optio, incidunt vero tempora molestias voluptates cum totam voluptas! Ratione eveniet aliquid iste dolore sit consectetur incidunt dolores qui magni cum veritatis, ab eum quos corrupti illum sequi et, debitis eaque accusantium dolorum fugit vero. Saepe quae numquam labore cumque voluptatibus dolore odit earum expedita. Cupiditate quibusdam dolorem, suscipit cumque placeat sed quisquam quis est voluptas sunt magnam fugit facilis asperiores iste, dolore aliquid dolor nemo nostrum! Repudiandae nemo at, officia quibusdam quia blanditiis ipsa?</p>
             </div>
@@ -77,12 +77,12 @@
 {{-- visi & misi --}}
 <section class="visi-misi">
     <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
             <div class="col my-5">
                 <h2>Visi & Misi</h2>
             </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col-md-6 text-center">
                 <h3>Visi</h3>
                 <p class="fs-5">Alif Juara Ahlak Mulia</p>
@@ -102,14 +102,16 @@
 {{-- struktur organisasi --}}
 <section class="struktur-org">
     <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
             <div class="col my-5">
                 <h2>Struktur Organisasi</h2>
             </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
             <div class="col mb-3 d-flex justify-content-center">
-                <img src="/img/mad1.jpg" style="height:500px;">
+                <div class="card">
+                    <img src="/img/mad1.jpg" class="card-img-top" style="width:100%;">
+                </div>
             </div>
         </div>
     </div>
@@ -118,7 +120,7 @@
 {{-- pimpinan lembaga --}}
 <section class="lembaga">
     <div class="container">
-        <div class="row py-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row py-5 me-0" data-aos="fade-up" data-aos-duration="3000">
             <div class="col">
                 <h2>Pimpinan Lembaga</h2>
             </div>
