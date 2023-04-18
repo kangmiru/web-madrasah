@@ -10,10 +10,10 @@
             @foreach ($units as $l)
             <div class="col-md-3 mb-3">
                 <div class="card">
-                    <img src="/img/mad1.jpg" class="card-img-top" alt="...">
+                    <img src="/img/{{ $l["gambar"] }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">
-                            <a href="/madrasah/{{ $l["slug"] }}">
+                            <a href="/lainnya/{{ $l["slug"] }}">
                                 {{ $l["unit"] }}
                             </a>    
                         </h5>

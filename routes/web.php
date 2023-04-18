@@ -57,3 +57,12 @@ Route::get('/lainnya',function(){
         "units" => Lainnya::all()
     ]);
 });
+
+// route ke halaman unit
+Route::get('/lainnya/{slug}',function($slug){
+    return view ('/lainnya/unit',[
+        "title" => "Unit",
+        "active" => "lainnya",
+        "unit" => Lainnya::find($slug)
+    ]);
+});
