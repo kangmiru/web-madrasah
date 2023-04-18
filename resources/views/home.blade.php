@@ -5,14 +5,11 @@
     <!-- cover web -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-        <div class="carousel-item active">
+            <div class="carousel-item active">
                 <img src="/img/mad1.jpg" class="d-block w-100" style="height:750px; filter:brightness(50%);">
                 <div class="carousel-caption align-items-center readmore mb-5" >
-                        <h1>RA/TK ALIF ABS</h1>
+                        <h1>RA ALIF ABS</h1>
                         <a href="" class="lead" style="color: white; text-decoration:none;">Ciwidey, Bandung, Jawa Barat</a>
-                        <p class="lead">
-                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-light mt-3"><span>Selengkapnya </span></button>
-                        </p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -20,29 +17,20 @@
                 <div class="carousel-caption align-items-center readmore mb-5">
                         <h1>MI ALIF ABS</h1>
                         <a href="" class="lead" style="color: white; text-decoration:none;">Ciwidey, Bandung, Jawa Barat</a>
-                        <p class="lead">
-                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-light mt-3"><span>Selengkapnya </span></button>
-                        </p>
                 </div>
             </div>
             <div class="carousel-item">
-            <img src="/img/mad1.jpg" class="d-block w-100" style="height:750px;filter:brightness(50%);">
+                <img src="/img/mad1.jpg" class="d-block w-100" style="height:750px;filter:brightness(50%);">
                 <div class="carousel-caption align-items-center readmore mb-5">
                         <h1>MTS ALIF ABS</h1>
                         <a href="" class="lead" style="color: white; text-decoration:none;">Ciwidey, Bandung, Jawa Barat</a>
-                        <p class="lead">
-                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-light mt-3"><span>Selengkapnya </span></button>
-                        </p>
                 </div>
             </div>
             <div class="carousel-item">
-            <img src="/img/mad1.jpg" class="d-block w-100" style="height:750px;filter:brightness(50%);">
+                <img src="/img/mad1.jpg" class="d-block w-100" style="height:750px;filter:brightness(50%);">
                 <div class="carousel-caption align-items-center readmore mb-5">
                         <h1>MA ALIF ABS</h1>
                         <a href="" class="lead" style="color: white; text-decoration:none;">Ciwidey, Bandung, Jawa Barat</a>
-                        <p class="lead">
-                        <button href="#" class="selengkapnya-cover btn btn-lg btn-secondary fw-bold border-white btn-light mt-3"><span>Selengkapnya </span></button>
-                        </p>
                 </div>
             </div>
         </div>
@@ -182,14 +170,15 @@
             <h2 class="text-center mt-5 mb-5">Sekolah Kami</h2>
             <div class="row me-0 ms-3">
                 <div class="owl-carousel carousel-theme slider">
+                    @foreach ($madrasah as $m)
                     <div class="col-md-3 mb-3 item ">
                         <div class="card-sekolah" >
                             <div class="card sekolah-card"  style="width: 400px;">
-                                <img src="/img/mad1.jpg" class="card-img-top">
+                                <img src="/img/{{ $m["gambar"] }}" class="card-img-top">
                                 <div class="card-body">
-                                    <h5 class="card-title">Madrasah Aliyah</h5>
+                                    <h5 class="card-title">{{ $m["tingkat"] }} </h5>
                                     <button class="selengkapnya btn btn-primary text-center">
-                                        <a href="" style="text-decoration:none; color:white;">
+                                        <a href="/madrasah/{{ $m["slug"] }}" style="text-decoration:none; color:white;">
                                             <span>selengkapnya </span> 
                                         </a>
                                     </button>
@@ -197,57 +186,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3 item ">
-                        <div class="card-sekolah">
-                            <div class="card sekolah-card" style="width: 400px;">
-                                <img src="/img/mad1.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Madrasah Aliyah</h5>
-                                    <button class="selengkapnya btn btn-primary text-center">
-                                        <a href="" style="text-decoration:none; color:white;">
-                                            <span>selengkapnya </span> 
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3 item ">
-                        <div class="card-sekolah">
-                            <div class="card sekolah-card" style="width: 400px;">
-                                <img src="/img/mad1.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Madrasah Aliyah</h5>
-                                    <button class="selengkapnya btn btn-primary text-center">
-                                        <a href="" style="text-decoration:none; color:white;">
-                                            <span>selengkapnya </span> 
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3 item ">
-                        <div class="card-sekolah">
-                            <div class="card sekolah-card" style="width: 400px;">
-                                <img src="/img/mad1.jpg" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">Madrasah Aliyah</h5>
-                                    <button class="selengkapnya btn btn-primary text-center">
-                                        <a href="" style="text-decoration:none; color:white;">
-                                            <span>selengkapnya </span> 
-                                        </a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="row me-0">
                 <div class="col text-center">
                     <button class="more btn text-center">
-                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                        <a href="/pendidikan" style="text-decoration:none; color:#0d6efd;">
                             <span>Lebih Banyak </span> 
                         </a>
                     </button>
