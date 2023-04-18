@@ -29,13 +29,13 @@
                         <p class="text-center">Berdirinya Madrasah</p>
                     </div>
                 </div>
-                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2500">
+                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-5 mb-2">
                         <div class="garis mx-auto"></div>
                     </div>
                 </div>
 
-                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-2">
                         <p class="text-center">2003</p>
                     </div>
@@ -46,13 +46,13 @@
                         <p class="text-center">Berdirinya Madrasah</p>
                     </div>
                 </div>
-                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-5">
                         <div class="garis mx-auto"></div>
                     </div>
                 </div>
                 
-                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-2">
                         <p class="text-center">2023</p>
                     </div>
@@ -63,7 +63,7 @@
                         <p class="text-center">Berdirinya Madrasah</p>
                     </div>
                 </div>
-                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row me-0 my-2 ms-auto" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-5">
                         <div class="garis mx-auto"></div>
                     </div>
@@ -77,7 +77,7 @@
 {{-- visi & misi --}}
 <section class="visi-misi">
     <div class="container">
-        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col my-5">
                 <h2>Visi & Misi</h2>
             </div>
@@ -102,12 +102,12 @@
 {{-- struktur organisasi --}}
 <section class="struktur-org">
     <div class="container">
-        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col my-5">
                 <h2>Struktur Organisasi</h2>
             </div>
         </div>
-        <div class="row me-0" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col mb-3 d-flex justify-content-center">
                 <div class="card">
                     <img src="/img/mad1.jpg" class="card-img-top" style="width:100%;">
@@ -120,12 +120,12 @@
 {{-- pimpinan lembaga --}}
 <section class="lembaga">
     <div class="container">
-        <div class="row py-5 me-0" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row py-5 me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col">
                 <h2>Pimpinan Lembaga</h2>
             </div>
         </div>
-        <div class="row me-0 ms-3" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row me-0 ms-3" data-aos="fade-up" data-aos-duration="2000">
             <div class="owl-carousel carousel-theme slider">
                 <div class="col-md-3 mb-3 item ">
                     <div class="card-sekolah" >
@@ -133,11 +133,7 @@
                             <img src="/img/mad1.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Madrasah Aliyah</h5>
-                                <button class="selengkapnya btn btn-primary text-center">
-                                    <a href="" style="text-decoration:none; color:white;">
-                                        <span>selengkapnya </span> 
-                                    </a>
-                                </button>
+                                <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum dolor.</h6>
                             </div>
                         </div>
                     </div>
@@ -148,11 +144,7 @@
                             <img src="/img/mad1.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Madrasah Aliyah</h5>
-                                <button class="selengkapnya btn btn-primary text-center">
-                                    <a href="" style="text-decoration:none; color:white;">
-                                        <span>selengkapnya </span> 
-                                    </a>
-                                </button>
+                                <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum dolor.</h6>
                             </div>
                         </div>
                     </div>
@@ -163,11 +155,7 @@
                             <img src="/img/mad1.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Madrasah Aliyah</h5>
-                                <button class="selengkapnya btn btn-primary text-center">
-                                    <a href="" style="text-decoration:none; color:white;">
-                                        <span>selengkapnya </span> 
-                                    </a>
-                                </button>
+                                <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum dolor.</h6>
                             </div>
                         </div>
                     </div>
@@ -178,11 +166,7 @@
                             <img src="/img/mad1.jpg" class="card-img-top">
                             <div class="card-body">
                                 <h5 class="card-title">Madrasah Aliyah</h5>
-                                <button class="selengkapnya btn btn-primary text-center">
-                                    <a href="" style="text-decoration:none; color:white;">
-                                        <span>selengkapnya </span> 
-                                    </a>
-                                </button>
+                                <h6 class="card-subtitle mb-2 text-muted">Lorem, ipsum dolor.</h6>
                             </div>
                         </div>
                     </div>
