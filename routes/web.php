@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Berita;
 use App\Models\Lainnya;
 use App\Models\LatarBelakang;
 use Illuminate\Support\Facades\Route;
@@ -64,5 +65,22 @@ Route::get('/lainnya/{slug}',function($slug){
         "title" => "Unit",
         "active" => "lainnya",
         "unit" => Lainnya::find($slug)
+    ]);
+});
+
+// route ke halaman berita
+Route::get('/berita',function(){
+    return view ('/berita/berita',[
+        "title" => "Berita Madrasah",
+        "active" => "berita",
+        "berita" => Berita::all()
+    ]);
+});
+
+Route::get('/berita/{slug}',function($slug){
+    return view ('/berita/read',[
+        "title" => "Berita Madrasah",
+        "active" => "berita",
+        "news" => Berita::find($slug)
     ]);
 });

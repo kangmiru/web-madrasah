@@ -110,7 +110,9 @@ body,html{
   }
 
 .profil,
-.pendidikan {
+.pendidikan,
+.berita,
+.read {
   background-color: #fff;
   padding-top: 100px;
 }

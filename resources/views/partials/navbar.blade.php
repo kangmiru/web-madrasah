@@ -16,18 +16,18 @@
                   <a class="nav-link {{ ($active =="profil") ? 'active' : '' }}" href="/profil">Profil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link {{ ($active =="pendidikan") ? 'active' : '' }}" href="/pendidikan" id="navbarDropdownMenuLink" >
+                    <a class="nav-link {{ ($active =="pendidikan") ? 'active' : '' }}" href="/pendidikan">
                       Pendidikan
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link {{ ($active =="lainnya") ? 'active' : '' }}" href="/lainnya" id="navbarDropdownMenuLink" >
+                    <a class="nav-link {{ ($active =="lainnya") ? 'active' : '' }}" href="/lainnya">
                       Unit Lainnya
                     </a>
                   </li>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Berita</a>
+                  <a class="nav-link {{ ($active =="berita") ? 'active' : '' }}"  href="/berita">Berita</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#">Galeri</a>
