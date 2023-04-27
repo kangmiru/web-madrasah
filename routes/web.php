@@ -3,7 +3,11 @@
 use App\Models\Berita;
 use App\Models\Lainnya;
 use App\Models\LatarBelakang;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\LainnyaController;
+use App\Http\Controllers\LatarBelakangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,54 +37,22 @@ Route::get('/profil', function (){
 });
 
 //route kehalaman pendidikan
-Route::get('/pendidikan', function(){
-    return view('pendidikan',[
-        "title" => "Pendidikan",
-        "active" => "pendidikan",
-        "madrasah" => LatarBelakang::all()
-    ]);
-});
-
-// route ke halaman madrasah
-Route::get('/madrasah/{slug}', function($slug){
-    return view('/madrasah/madrasah', [
-        "title" => "Madrasah",
-        "active" => "madrasah",
-        "profil" => LatarBelakang::find($slug)
-    ]);
-});
+Route::get('/pendidikan', [LatarBelakangController::class, 'index']);
+Route::get('/madrasah/{slug}', [LatarBelakangController::class, 'show']);
 
 // route ke halaman lainnya
-Route::get('/lainnya',function(){
-    return view ('/lainnya/lainnya',[
-        "title" => "Unit Lainnya",
-        "active" => "lainnya",
-        "units" => Lainnya::all()
-    ]);
-});
-
-// route ke halaman unit
-Route::get('/lainnya/{slug}',function($slug){
-    return view ('/lainnya/unit',[
-        "title" => "Unit",
-        "active" => "lainnya",
-        "unit" => Lainnya::find($slug)
-    ]);
-});
+Route::get('/lainnya',[LainnyaController::class, 'index']);
+Route::get('/lainnya/{slug}',[LainnyaController::class, 'show']);
 
 // route ke halaman berita
-Route::get('/berita',function(){
-    return view ('/berita/berita',[
-        "title" => "Berita Madrasah",
-        "active" => "berita",
-        "berita" => Berita::all()
-    ]);
-});
+Route::get('/berita', [BeritaController::class, 'index']);
+Route::get('/berita/{berita:slug}',[BeritaController::class, 'show']);
 
-Route::get('/berita/{slug}',function($slug){
-    return view ('/berita/read',[
-        "title" => "Berita Madrasah",
-        "active" => "berita",
-        "news" => Berita::find($slug)
+// route ke halaman kategori
+Route::get('/categories/{category:slug}', function (Category $category){
+    return view('/berita/category',[
+        'title' => $category->name,
+        'berita' => $category->berita,
+        'category' => $category->name
     ]);
 });
