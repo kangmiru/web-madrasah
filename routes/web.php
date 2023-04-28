@@ -49,9 +49,18 @@ Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita/{berita:slug}',[BeritaController::class, 'show']);
 
 // route ke halaman kategori
+Route::get('/categories',function(){
+    return view('/berita/categories',[
+        'title' => 'Kategori',
+        'active' => 'kategori',
+        'categories' => Category::all()
+    ]);
+} );
+
 Route::get('/categories/{category:slug}', function (Category $category){
     return view('/berita/category',[
         'title' => $category->name,
+        'active' => 'kategori',
         'berita' => $category->berita,
         'category' => $category->name
     ]);

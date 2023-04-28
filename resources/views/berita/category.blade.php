@@ -3,12 +3,12 @@
 @section('content')
 <section class="blank"></section>
 
-{{-- berita --}}
-<section class="berita">
+{{-- kategori --}}
+<section class="kategori">
     <div class="container">
         <div class="row mb-3 pt-3">
             <div class="col">
-                <h3>Berita</h3>
+                <h3><a href="/berita" style="text-decoration:none;" class="text-dark">Berita</a> > <a href="/categories" style="text-decoration:none;" class="text-dark">Kategori</a> > <a href="/categories/{{ $title }}" style="text-decoration:none;" class="text-dark">{{ $title }}</a></h3>
             </div>
         </div>
         <div class="row">

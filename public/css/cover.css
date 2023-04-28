@@ -77,7 +77,9 @@ body {
 .artikel,
 .galeri,
 .struktur-org,
-.lembaga {
+.lembaga,
+.kategori,
+.read {
   background-image: none;
   background-color: #fff;
 }
