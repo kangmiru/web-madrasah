@@ -23,6 +23,8 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('12345')
         ]);
 
+        User::factory()->count(4)->create();
+
         Category::create([
             'name' => 'Sosial',
             'slug' => 'sosial'
@@ -33,22 +35,6 @@ class DatabaseSeeder extends Seeder
             'slug' => 'madrasah'
         ]);
 
-        Berita::create([
-            'title' => ' Judul Pertama',
-            'slug' => 'judul-pertama',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo error quod sequi aliquam minima officia,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo error quod sequi aliquam minima officia, repellat natus rerum ipsa, culpa rem asperiores explicabo ducimus nihil tempora perferendis ratione dolorum neque magnam enim distinctio deleniti. Accusantium, quo. Recusandae doloribus facilis modi illum. Iusto recusandae nisi maxime accusamus, laborum labore autem.',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
-
-        Berita::create([
-            'title' => ' Judul Kedua',
-            'slug' => 'judul-kedua',
-            'excerpt' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo error quod sequi aliquam minima officia,',
-            'body' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero illo error quod sequi aliquam minima officia, repellat natus rerum ipsa, culpa rem asperiores explicabo ducimus nihil tempora perferendis ratione dolorum neque magnam enim distinctio deleniti. Accusantium, quo. Recusandae doloribus facilis modi illum. Iusto recusandae nisi maxime accusamus, laborum labore autem.',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
+        Berita::factory()->count(20)->create();
     }
 }

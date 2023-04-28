@@ -12,7 +12,7 @@ class BeritaController extends Controller
         return view ('/berita/berita',[
             "title" => "Berita Madrasah",
             "active" => "berita",
-            "berita" => Berita::all()
+            "berita" => Berita::latest()->get()
         ]);
     }
 
