@@ -61,7 +61,7 @@ Route::get('/categories/{category:slug}', function (Category $category){
     return view('/berita/category',[
         'title' => $category->name,
         'active' => 'kategori',
-        'berita' => $category->berita,
+        'berita' => $category->berita->load('category'),
         'category' => $category->name
     ]);
 });

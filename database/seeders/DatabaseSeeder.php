@@ -35,6 +35,11 @@ class DatabaseSeeder extends Seeder
             'slug' => 'madrasah'
         ]);
 
+        Category::create([
+            'name' => 'Artikel',
+            'slug' => 'artikel'
+        ]);
+
         Berita::factory()->count(20)->create();
     }
 }

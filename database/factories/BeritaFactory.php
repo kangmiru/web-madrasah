@@ -20,9 +20,10 @@ class BeritaFactory extends Factory
             'title' => fake()->sentence(mt_rand(2,8)),
             'slug' => fake()->slug(),
             'excerpt' => fake()->paragraph(),
-            'body' => fake()->paragraph(mt_rand(5,10)),
+            'body' => collect(fake()->paragraphs(mt_rand(5,10)))
+                        ->map(fn($p)=> "<p>$p</p>"),
             'user_id' => mt_rand(1,5),
-            'category_id' => mt_rand(1,2)
+            'category_id' => mt_rand(1,3)
         ];
     }
 }
