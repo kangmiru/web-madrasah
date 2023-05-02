@@ -18,8 +18,13 @@
                 <h2>{{ $news->title }}</h2>
         
                 <p>By. Hafadz in <a href="/category/{{ $news->category->slug }}">{{ $news->category->name   }}</a></p>
+
+                <img src="https://source.unsplash.com/1200x400/?{{ $news->category->name }}" alt="{{ $news->category->name }}" class="img-fluid">
                 
-                {{!! $news->body !!}}
+
+                <article class="my-3">
+                    {!! $news->body !!}
+                </article>
                 
                 <br>
                 

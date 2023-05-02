@@ -12,19 +12,19 @@
             </div>
         </div>
         
-        <div class="row">
+        <div class="row pb-5">
             @foreach ($categories as $c)
-            <div class="col-md-3 mb-3">
-                <div class="card">
-                    <img src="https://source.unsplash.com/500x500/?{{ $c->name }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <a href="/categories/{{ $c->slug }}" class="text-dark" style="text-decoration : none;">
-                                {{ $c->name }}
-                            </a>    
-                        </h5>
+            <div class="col-md-3 mb-5">
+                <a href="/categories/{{ $c->slug }}" class="" style="text-decoration : none;">
+                    <div class="card bg-dark text-white">
+                        <img src="https://source.unsplash.com/500x500/?{{ $c->name }}" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-center p-0">
+                            <h5 class="card-title text-center flex-fill p-4 text-white" style="background-color: rgba(0,0,0,0.7)">
+                                    {{ $c->name }}
+                            </h5>
+                        </div>
                     </div>
-                </div>
+                </a>    
             </div>
             @endforeach
         </div>

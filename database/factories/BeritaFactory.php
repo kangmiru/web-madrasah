@@ -20,8 +20,7 @@ class BeritaFactory extends Factory
             'title' => fake()->sentence(mt_rand(2,8)),
             'slug' => fake()->slug(),
             'excerpt' => fake()->paragraph(),
-            'body' => collect(fake()->paragraphs(mt_rand(5,10)))
-                        ->map(fn($p)=> "<p>$p</p>"),
+            'body' => '<p>'. implode('</p><p>', fake()->paragraphs(mt_rand(5,10))). '</p>',
             'user_id' => mt_rand(1,5),
             'category_id' => mt_rand(1,3)
         ];
