@@ -2,9 +2,10 @@
 
 use App\Models\Berita;
 use App\Models\Lainnya;
-use App\Models\LatarBelakang;
 use App\Models\Category;
+use App\Models\LatarBelakang;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\LainnyaController;
 use App\Http\Controllers\LatarBelakangController;
@@ -20,13 +21,7 @@ use App\Http\Controllers\LatarBelakangController;
 |
 */
 
-Route::get('/', function () {
-    return view('home',[
-        "title" => "Home",
-        "active" => "home",
-        "madrasah" => LatarBelakang::all()
-    ]);
-});
+Route::get('/', [HomeController::class, 'index']);
 
 // route ke halaman profile
 Route::get('/profil', function (){

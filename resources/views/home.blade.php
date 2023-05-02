@@ -49,18 +49,18 @@
         <div class="profil" style="background-color: #fff;">
             <div class="row justify-content-center me-0">
                 <div class="col-md-5 my-5">
-                    <h3>Lorem, ipsum dolor.</h3>
+                    <h3>Profil</h3>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis consequatur accusamus, maiores aspernatur quia sapiente ex cumque officia! Obcaecati, quo alias blanditiis eligendi quae maiores unde asperiores incidunt voluptatem, nemo praesentium fugiat eos ab facere repellat corporis quaerat. Mollitia amet sed illo autem nam voluptatem similique, inventore facilis repellendus quaerat! Tempora, eos. Quidem totam modi dicta earum sint, velit repudiandae ducimus quasi facere beatae ea molestiae, soluta minima quisquam magni deleniti, vitae quas assumenda. Ratione, ipsum aperiam dolore voluptate, iste quos officia temporibus, autem rem tenetur nam deserunt est vitae molestias repellat laborum ex pariatur reprehenderit unde enim explicabo modi.
                     </p>
                     <button class="selengkapnya btn btn-primary text-center">
-                        <a href="" style="text-decoration:none; color:white;">
+                        <a href="/profil" style="text-decoration:none; color:white;">
                             <span>selengkapnya </span> 
                         </a>
                     </button>
                 </div>
                 <div class="col-md-5 my-5 g-6">
-                    <img class="center mx-auto d-block" src="/img/mad1.jpg">
+                    <img class="center mx-auto d-block" src="https://source.unsplash.com/500x500/?madrasah">
                     <p class="text-center">Lorem, ipsum dolor.</p>
                 </div>
             </div>
@@ -106,6 +106,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card alasan" >
                         <div class="card-body">
+                            <img src="https://source.unsplash.com/500x500/?madrasah"class="img-fluid">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -113,6 +114,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card alasan" >
                         <div class="card-body">
+                            <img src="https://source.unsplash.com/500x500/?madrasah" class="img-fluid">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -120,6 +122,7 @@
                 <div class="col-md-4 mb-3">
                     <div class="card alasan" >
                         <div class="card-body">
+                            <img src="https://source.unsplash.com/500x500/?madrasah" class="img-fluid">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -165,37 +168,39 @@
     </section>
 
     <!-- sekolah kami -->
-    <section>
-        <div class="sekolah py-5 pt-2">
-            <h2 class="text-center mt-5 mb-5">Sekolah Kami</h2>
-            <div class="row me-0 ms-3">
-                <div class="owl-carousel carousel-theme slider">
-                    @foreach ($madrasah as $m)
-                    <div class="col-md-3 mb-3 item ">
-                        <div class="card-sekolah" >
-                            <div class="card sekolah-card"  style="width: 400px;">
-                                <img src="/img/{{ $m["gambar"] }}" class="card-img-top">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ $m["tingkat"] }} </h5>
-                                    <button class="selengkapnya btn btn-primary text-center">
-                                        <a href="/madrasah/{{ $m["slug"] }}" style="text-decoration:none; color:white;">
-                                            <span>selengkapnya </span> 
-                                        </a>
-                                    </button>
+    <section class="sekolah">
+        <div class="container ">
+            <div class="py-5 pt-2">
+                <h2 class="text-center mt-5 mb-5">Sekolah Kami</h2>
+                <div class="row me-0 ms-3">
+                    <div class="owl-carousel carousel-theme slider">
+                        @foreach ($madrasah as $m)
+                        <div class="col-md-3 mb-3 item ">
+                            <div class="card-sekolah" >
+                                <div class="card sekolah-card"  style="width: 400px;">
+                                    <img src="https://source.unsplash.com/500x500/?madrasah" class="card-img-top img-fluid">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ $m["tingkat"] }} </h5>
+                                        <button class="selengkapnya btn btn-primary text-center">
+                                            <a href="/madrasah/{{ $m["slug"] }}" style="text-decoration:none; color:white;">
+                                                <span>selengkapnya </span> 
+                                            </a>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
-            </div>
-            <div class="row me-0">
-                <div class="col text-center">
-                    <button class="more btn text-center">
-                        <a href="/pendidikan" style="text-decoration:none; color:#0d6efd;">
-                            <span>Lebih Banyak </span> 
-                        </a>
-                    </button>
+                <div class="row me-0">
+                    <div class="col text-center">
+                        <button class="more btn text-center">
+                            <a href="/pendidikan" style="text-decoration:none; color:#0d6efd;">
+                                <span>Lebih Banyak </span> 
+                            </a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,118 +216,28 @@
                 </div>
             </div>
             <div class="row me-0 d-flex justify-content-center ms-auto">
+            @foreach ($berita as $b)
                 <div class="col-md-4 mb-3">
                     <div class="card card-berita">
-                        <img src="/img/mad1.jpg" class="card-img-top">
+                        <img src="https://source.unsplash.com/500x500/?{{ $b->category->name }}" class="card-img-top">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <h5 class="card-title">{{ $b->title }}</h5>
+                            <p class="card-text">{{ $b->excerpt }}</p>
                             <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
+                                <a href="/berita/{{ $b->slug }}" style="text-decoration:none; color:white;">
                                     <span>selengkapnya </span> 
                                 </a>
                             </button>
                         </div>
                     </div>  
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card card-berita" >
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card card-berita" >
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
+            @endforeach
             </div>
+            
             <div class="row me-0 pt-5">
                 <div class="col text-center">
                     <button class="more btn text-center">
-                        <a href="" style="text-decoration:none; color:#0d6efd;">
-                            <span>Lebih Banyak </span> 
-                        </a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- artikel madrasah -->
-    <section class="artikel py-5">
-        <hr>
-        <div class="container">
-            <div class="row me-0 my-5">
-                <div class="col">
-                    <h2 class="text-center">Artikel Madrasah</h2>
-                </div>
-            </div>
-            <div class="row me-0 d-flex justify-content-center ms-auto">
-                <div class="col-md-4 mb-3">
-                    <div class="card" >
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" >
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" >
-                        <img src="/img/mad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button class="selengkapnya btn btn-primary text-center">
-                                <a href="" style="text-decoration:none; color:white;">
-                                    <span>selengkapnya </span> 
-                                </a>
-                            </button>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-            <div class="row me-0 pt-5">
-                <div class="col text-center">
-                    <button class="more btn text-center">
-                        <a href="" style="text-decoration:none; color:#0d6efd;">
+                        <a href="/berita" style="text-decoration:none; color:#0d6efd;">
                             <span>Lebih Banyak </span> 
                         </a>
                     </button>

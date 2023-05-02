@@ -36,6 +36,9 @@
                   <a class="nav-link" href="#">Kontak</a>
                   </li>
                   <li class="nav-item">
+                  <a class="nav-link" href="#">Alumni</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link btn btn-warning " href="#">PSB</a>
                   </li>
               </ul>
