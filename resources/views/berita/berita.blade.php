@@ -12,6 +12,17 @@
             </div>
         </div>
 
+        <div class="row my-3 justify-content-center">
+            <div class="col-md-6">
+                <form action="/posts">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Cari Berita..." aria-label="Cari Berita..." name="cari">
+                        <button class="btn btn-success" type="submit">Cari</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         @if ($berita->count())
         <div class="row mb-3">
             <div class="col-md">
@@ -37,9 +48,7 @@
                 </div>
             </div>
         </div>
-        @else
-        <p>Tidak Ada Berita</p>
-        @endif
+        
         <div class="row">
             @foreach ($berita->skip(1) as $b)
             <div class="col-md-3 mb-3">
@@ -70,6 +79,10 @@
             </div>
             @endforeach
         </div>
+
+        @else
+        <p>Tidak Ada Berita</p>
+        @endif
     </div>
 </section>
 
