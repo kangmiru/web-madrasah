@@ -8,14 +8,14 @@
     <div class="container">
         <div class="row mb-3 pt-3">
             <div class="col">
-                <h3><a href="/berita" style="text-decoration:none;" class="text-dark">Berita</a> > <a href="/categories" style="text-decoration:none;" class="text-dark">Kategori</a></h3>
+                <h3><a href="/berita" class="text-dark" style="text-decoration: none;">{{ $title }}</a> - <a href="/categories" class="text-dark" style="text-decoration: none;">Kategori</a></h3>
             </div>
         </div>
         
-        <div class="row pb-5">
+        <div class="row pb-5 justify-content-center">
             @foreach ($categories as $c)
             <div class="col-md-3 mb-5">
-                <a href="/categories/{{ $c->slug }}" class="" style="text-decoration : none;">
+                <a href="/berita?category={{ $c->slug }}" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
                         <img src="https://source.unsplash.com/500x500/?{{ $c->name }}" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-center p-0">

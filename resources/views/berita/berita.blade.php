@@ -6,17 +6,21 @@
 {{-- berita --}}
 <section class="berita">
     <div class="container">
-        <div class="row mb-3 pt-3">
+        <div class="row py-3">
             <div class="col">
-                <h3>Berita</h3>
+                <h3><a href="/berita" class="text-dark" style="text-decoration: none;">{{ $title }}</a> - <a href="/categories" class="text-dark" style="text-decoration: none;">Kategori</a></h3>
             </div>
         </div>
 
         <div class="row my-3 justify-content-center">
             <div class="col-md-6">
-                <form action="/posts">
+                <form action="/berita">
+                @if(request('category'))
+                    <input type="hidden" name="category" value="{{ request('category') }}">
+                @endif
+
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Cari Berita..." aria-label="Cari Berita..." name="cari">
+                        <input type="text" class="form-control" placeholder="Cari Berita..." aria-label="Cari Berita..." name="cari" value="{{ request('cari') }}">
                         <button class="btn btn-success" type="submit">Cari</button>
                     </div>
                 </form>
@@ -37,7 +41,7 @@
                         <p class="text-center">
                             {{ $berita[0]->excerpt }}
                         </p>
-                        <p class="card-text text-center"><a href="/categories/{{ $berita[0]->category->slug }}"  style="text-decoration:none;"><small class ="text-muted">{{ $berita[0]->category->name }}</small></a></p>
+                        <p class="card-text text-center"><a href="/berita?category={{ $berita[0]->category->slug }}"  style="text-decoration:none;"><small class ="text-muted">{{ $berita[0]->category->name }}</small></a></p>
                         <p class="card-text text-center"><small class ="text-muted">{{ $berita[0]->created_at->diffForHumans() }}</small></p>
                         <button class="selengkapnya btn btn-primary d-flex justify-content-center mx-auto">
                             <a href="/berita/{{ $berita[0]->slug }}" style="text-decoration:none; color:white;">
@@ -54,7 +58,7 @@
             <div class="col-md-3 mb-3">
                 <div class="card">
                     <div class="position-absolute p-2" style="background-color: rgba(0,0,0,0.5)">
-                        <a href="/categories/{{ $b->category->slug }}" class="text-white" style="text-decoration:none;">
+                        <a href="/berita?category={{ $b->category->slug }}" class="text-white" style="text-decoration:none;">
                             {{ $b->category->name }}
                         </a>    
                     </div>
@@ -81,8 +85,12 @@
         </div>
 
         @else
-        <p>Tidak Ada Berita</p>
+        <h3 class="text-center pb-5">Tidak Ada Berita</h3>
         @endif
+
+        <div class="d-flex justify-content-center pb-5">
+            {{ $berita->links() }}
+        </div>
     </div>
 </section>
 

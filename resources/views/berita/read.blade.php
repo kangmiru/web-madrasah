@@ -7,7 +7,7 @@
     <div class="container pb-5">
         <div class="row mb-3 pt-3">
             <div class="col">
-                <h3><a href="/berita" style="text-decoration:none;" class="text-dark">Berita</a> > <a href="/categories" style="text-decoration:none;" class="text-dark">Kategori</a> > <a href="/categories/{{ $news->category->slug }}" style="text-decoration:none;" class="text-dark">{{ $news->category->name }}</a> > {{ $news->title   }}</h3>
+                <h3><a href="/berita" class="text-dark" style="text-decoration: none;">{{ $title }}</a> - <a href="/categories" class="text-dark" style="text-decoration: none;">Kategori</a></h3>
             </div>
         </div>
         
@@ -17,7 +17,7 @@
                 
                 <h2>{{ $news->title }}</h2>
         
-                <p>By. Hafadz in <a href="/category/{{ $news->category->slug }}">{{ $news->category->name   }}</a></p>
+                <p>By. Hafadz in <a href="/berita?category={{ $news->category->slug }}">{{ $news->category->name  }}</a></p>
 
                 <img src="https://source.unsplash.com/1200x400/?{{ $news->category->name }}" alt="{{ $news->category->name }}" class="img-fluid">
                 

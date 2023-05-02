@@ -30,7 +30,7 @@
                   <a class="nav-link {{ ($active =="berita") ? 'active' : '' }}"  href="/berita">Berita</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Galeri</a>
+                  <a class="nav-link {{ ($active =="galeri") ? 'active' : '' }}" href="/galeri">Galeri</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#">Kontak</a>

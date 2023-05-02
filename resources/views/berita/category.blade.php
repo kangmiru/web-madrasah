@@ -8,7 +8,18 @@
     <div class="container">
         <div class="row mb-3 pt-3">
             <div class="col">
-                <h3><a href="/berita" style="text-decoration:none;" class="text-dark">Berita</a> > <a href="/categories" style="text-decoration:none;" class="text-dark">Kategori</a> > <a href="/categories/{{ $title }}" style="text-decoration:none;" class="text-dark">{{ $title }}</a></h3>
+                <h3><a href="/berita" class="text-dark" style="text-decoration: none;">{{ $title }}</a> - <a href="/categories" class="text-dark" style="text-decoration: none;">Kategori</a></h3>
+            </div>
+        </div>
+
+        <div class="row my-3 justify-content-center">
+            <div class="col-md-6">
+                <form action="/berita">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Cari Berita..." aria-label="Cari Berita..." name="cari" value="{{ request('cari') }}">
+                        <button class="btn btn-success" type="submit">Cari</button>
+                    </div>
+                </form>
             </div>
         </div>
 

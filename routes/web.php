@@ -60,3 +60,11 @@ Route::get('/categories/{category:slug}', function (Category $category){
         'category' => $category->name
     ]);
 });
+
+// route ke halaman galeri
+Route::get('/galeri', function (){
+    return view('galeri', [
+        "title" => "Galeri",
+        "active" => "galeri"
+    ]);
+});
