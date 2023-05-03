@@ -7,6 +7,8 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Berita;
+use App\Models\Galery;
+use App\Models\Foto;
 
 class DatabaseSeeder extends Seeder
 {
@@ -40,6 +42,18 @@ class DatabaseSeeder extends Seeder
             'name' => 'Artikel',
             'slug' => 'artikel'
         ]);
+
+        Galery::create([
+            'name' => 'Kegiatan',
+            'slug' => 'kegiatan'
+        ]);
+
+        Galery::create([
+            'name' => 'Fasilitas',
+            'slug' => 'fasilitas'
+        ]);
+
+        Foto::factory()->count(10)->create();
 
         Berita::factory()->count(20)->create();
     }

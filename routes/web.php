@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Berita;
+use App\Models\Galery;
 use App\Models\Lainnya;
 use App\Models\Category;
 use App\Models\LatarBelakang;
@@ -65,6 +66,16 @@ Route::get('/categories/{category:slug}', function (Category $category){
 Route::get('/galeri', function (){
     return view('galeri', [
         "title" => "Galeri",
-        "active" => "galeri"
+        "active" => "galeri",
+        'galeries' => Galery::all()
+    ]);
+});
+
+Route::get('/galeri/{galery:slug}', function (Galery $galery){
+    return view('/galeri/foto', [
+        'title' => $galery->name,
+        'active' => 'galeri',
+        'foto' => $galery->foto->load('galery'),
+        'galeri' => $galery->name
     ]);
 });

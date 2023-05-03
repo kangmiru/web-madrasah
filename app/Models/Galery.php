@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Galery extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function foto()
+    {
+        return $this->hasMany(Foto::class);
+    }
 }
