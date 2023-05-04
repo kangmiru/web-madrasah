@@ -67,7 +67,7 @@ Route::get('/galeri', function (){
     return view('galeri', [
         "title" => "Galeri",
         "active" => "galeri",
-        'galeries' => Galery::all()
+        'galeries' => Galery::latest()->paginate(8)
     ]);
 });
 

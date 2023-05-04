@@ -45,16 +45,16 @@ class DatabaseSeeder extends Seeder
 
         Galery::create([
             'name' => 'Kegiatan',
-            'slug' => 'kegiatan'
+            'slug' => 'activity'
         ]);
 
         Galery::create([
             'name' => 'Fasilitas',
-            'slug' => 'fasilitas'
+            'slug' => 'facility'
         ]);
 
-        Foto::factory()->count(10)->create();
+        Foto::factory()->count(15)->create();
 
-        Berita::factory()->count(20)->create();
+        Berita::factory()->count(30)->create();
     }
 }
