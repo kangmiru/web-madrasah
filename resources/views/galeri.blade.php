@@ -8,7 +8,7 @@
         <div class="row justify-content-center">
             @foreach($galeries as $galery)
             <div class="col-md-3">
-                <a href="/galeri?galery={{ $galery->slug }}" class="" style="text-decoration : none;">
+                <a href="/galeri/{{ $galery->slug }}" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
                         <img src="https://source.unsplash.com/500x500/?{{ $galery->slug }}" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-center p-0">
