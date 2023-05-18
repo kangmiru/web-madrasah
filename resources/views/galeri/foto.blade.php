@@ -8,18 +8,25 @@
         <div class="row justify-content-center">
             @foreach($foto as $f)
             <div class="col-md-3 mb-3">
-                <a href="/galeri" class="" style="text-decoration : none;">
-                    <div class="card bg-dark text-white">
-                        <img src="https://source.unsplash.com/500x500/?laut" class="card-img" alt="...">
+                <!-- <a  class="" style="text-decoration : none;" > -->
+                    <div class="card bg-dark text-white"  >
+                        <img id="myImg" src="https://source.unsplash.com/500x500/?laut" class="card-img" alt="{{ $f->name }}" >
                         <div class="card-img-overlay d-flex align-items-center p-0">
                             <h5 class="card-title text-center flex-fill p-4 text-white" style="background-color: rgba(0,0,0,0.7)">
-                                {{ $f->name }}
+                                {{-- $f->name --}}
                             </h5>
                         </div>
                     </div>
-                </a> 
+                <!-- </a>  -->
             </div>
             @endforeach
+        </div>
+
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class ="modal-content" id="img1">
+            <div id="caption"></div>
         </div>
     </div>
 </section>
