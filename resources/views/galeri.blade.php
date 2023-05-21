@@ -33,7 +33,7 @@
                     </div>
                 </a> 
             </div>
-            
+
             <div class="col-md-3">
                 <a href="/galeri/" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
