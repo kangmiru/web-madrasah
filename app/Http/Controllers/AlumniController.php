@@ -15,7 +15,10 @@ class AlumniController extends Controller
      */
     public function index()
     {
-        //
+        return view('/galeri/alumni',[
+            'title' => "Alumni",
+            'active' => 'galeri'
+        ]);
     }
 
     /**

@@ -3,7 +3,7 @@
 @section('content')
 <section class="blank"></section>
 
-<section class="foto">
+<section class="alumni">
     <div class="container py-5">
         <div class="row justify-content-center">
             @foreach($foto as $f)

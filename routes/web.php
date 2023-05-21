@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\LatarBelakang;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\BeritaController;
 use App\Http\Controllers\LainnyaController;
 use App\Http\Controllers\LatarBelakangController;
@@ -79,3 +80,6 @@ Route::get('/galeri/{galery:slug}', function (Galery $galery){
         'galeri' => $galery->name
     ]);
 });
+
+// route ke halaman alumni
+Route::get('/galeri/alumni', [AlumniController::class, 'index']);
