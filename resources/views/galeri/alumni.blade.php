@@ -21,13 +21,7 @@
             </div>
             @endforeach
         </div>
-
-        <!-- modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class ="modal-content" id="img1">
-            <div id="caption">{{ $f->name }}</div>
-        </div>
+            
     </div>
 </section>
 

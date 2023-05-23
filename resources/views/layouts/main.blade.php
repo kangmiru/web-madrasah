@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/kontak.css">
     <link rel="stylesheet" href="/css/profil.css">
-    <link rel="stylesheet" href="/css/modal.css">
 
     <title>Madrasah Alif | {{ $title }} </title>
   </head>
@@ -82,7 +81,6 @@
     <script src="/js/navbar.js"></script>
     <script src="/js/owl-carousel.js"></script>
     <script src="/js/counter.js"></script>
-    <script src="/js/modal.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

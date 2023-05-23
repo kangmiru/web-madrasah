@@ -33,7 +33,7 @@
                   <a class="nav-link {{ ($active =="galeri") ? 'active' : '' }}" href="/galeri">Galeri</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Kontak</a>
+                  <a class="nav-link" href="/kontak">Kontak</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#">Alumni</a>

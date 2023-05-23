@@ -22,7 +22,7 @@
             @endforeach
 
             <div class="col-md-3">
-                <a href="/galeri/alumni" class="" style="text-decoration : none;">
+                <a href="/galeries/alumni" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
                         <img src="https://source.unsplash.com/500x500/?people" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-center p-0">
@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-md-3">
-                <a href="/galeri/" class="" style="text-decoration : none;">
+                <a href="/galeri/video" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
                         <img src="https://source.unsplash.com/500x500/?foto" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-center p-0">

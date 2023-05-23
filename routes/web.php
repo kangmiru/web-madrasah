@@ -82,4 +82,20 @@ Route::get('/galeri/{galery:slug}', function (Galery $galery){
 });
 
 // route ke halaman alumni
-Route::get('/galeri/alumni', [AlumniController::class, 'index']);
+Route::get('/galeries/alumni', [AlumniController::class, 'index']);
+
+//  route halaman video
+Route::get('/videos/alumni', function(){
+    return view('/galeri/alumni', [
+        'title' => 'Video',
+        'active' => 'video'
+    ]);
+});
+
+// route ke halaman kontak person
+Route::get('/kontak', function(){
+    return view('/galeri/alumni',[
+        'title' => 'Video',
+        'active' => 'video'
+    ]);
+});
