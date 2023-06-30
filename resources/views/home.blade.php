@@ -246,6 +246,7 @@
         </div>
     </section>
 
+    
     <!-- geleri madrasah -->
     <section class="galeri py-5">
         <hr>
