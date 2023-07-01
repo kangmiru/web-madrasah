@@ -81,7 +81,8 @@ body {
 .kategori,
 .read,
 .galeri,
-.foto {
+.foto,
+.background {
   background-image: none;
   background-color: #fff;
 }

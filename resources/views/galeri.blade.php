@@ -22,7 +22,7 @@
             @endforeach
 
             <div class="col-md-3">
-                <a href="/galeri/video" class="" style="text-decoration : none;">
+                <a href="/videos/video" class="" style="text-decoration : none;">
                     <div class="card bg-dark text-white">
                         <img src="https://source.unsplash.com/500x500/?foto" class="card-img" alt="...">
                         <div class="card-img-overlay d-flex align-items-center p-0">
