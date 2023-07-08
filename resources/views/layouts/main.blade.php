@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/kontak.css">
     <link rel="stylesheet" href="/css/profil.css">
+    <link rel="stylesheet" href="/css/alumni.css">
 
     <title>Madrasah Alif | {{ $title }} </title>
   </head>

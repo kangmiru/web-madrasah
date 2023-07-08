@@ -1,0 +1,8 @@
+.alumni-img{
+    height: 150px;
+    width:150px;
+    margin: auto;
+    border-radius: 100%;
+    align-items: center;
+    vertical-align: middle;
+}
