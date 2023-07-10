@@ -82,6 +82,7 @@
     <script src="/js/navbar.js"></script>
     <script src="/js/owl-carousel.js"></script>
     <script src="/js/counter.js"></script>
+    <script src="/js/modal.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

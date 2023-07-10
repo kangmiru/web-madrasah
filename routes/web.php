@@ -89,10 +89,10 @@ Route::get('/videos/video', function(){
     ]);
 });
 
-// route ke halaman kontak person
-Route::get('/kontak', function(){
-    return view('/kontak',[
-        'title' => 'Kontak',
-        'active' => 'kontak'
+// route ke halaman alumni
+Route::get('/alumni', function(){
+    return view('/alumni',[
+        'title' => 'Alumni',
+        'active' => 'alumni'
     ]);
 });
