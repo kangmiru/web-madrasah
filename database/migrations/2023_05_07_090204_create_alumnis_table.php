@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('alumnis', function (Blueprint $table) {
             $table->id();
+            $table->String('nama');
+            $table->String('slug')->unique();
+            $table->String('angkatan');
+            $table->String('kuliah_kerja');
+            $table->text('excerpt');
+            $table->text('kesan');
             $table->timestamps();
         });
     }

@@ -17,7 +17,11 @@ class AlumniFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nama' => fake()->name(),
+            'slug' => fake()->slug(),
+            'angkatan' => fake()->randomDigit(mt_rand(4,6)),
+            'kesan' => '<p>'. implode('</p><p>', fake()->paragraphs(mt_rand(5,10))). '</p>',
+            'excerpt' => fake()->paragraph()
         ];
     }
 }

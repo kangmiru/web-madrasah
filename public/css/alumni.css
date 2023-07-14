@@ -3,6 +3,7 @@
     width:150px;
     margin: auto;
     border-radius: 100%;
+    border: 1px solid black;
 }
 
 .modal {
@@ -50,4 +51,10 @@
 #alumniMore:focus{
     color: aqua;
     cursor: pointer;
+}
+
+.alumni-img-modal {
+    width : 250px;
+    border-radius: 10%;
+    border: 1px solid black;
 }

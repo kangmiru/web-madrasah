@@ -56,5 +56,7 @@ class DatabaseSeeder extends Seeder
         Foto::factory()->count(15)->create();
 
         Berita::factory()->count(30)->create();
+
+        Alumni::factory()->count(10)->create();
     }
 }
