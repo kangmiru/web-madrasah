@@ -19,6 +19,7 @@ return new class extends Migration
             $table->String('slug')->unique();
             $table->String('angkatan');
             $table->String('kuliah_kerja');
+            $table->String('foto')->nullable();
             $table->text('excerpt');
             $table->text('kesan');
             $table->timestamps();

@@ -6,18 +6,20 @@
 <section class="background">
     <div class="container py-5">
         <div class="row justify-content-center">
+            @foreach($lulusan as $l)
             <div class="col-md-3">
-                <div class="card">
+                <div class="card mb-4" style="border-color: black; height: 500px;">
                     <img src="/img/oke1.png" class="alumni-img my-2">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Nama</h5>
-                        <p class="card-text">Angkatan</p>
-                        <p class="card-text">Pekerjaan/Kampus</p>
-                        <p class="card-text">Kesan</p>
+                        <h5 class="card-title">{{ $l->nama }}</h5>
+                        <p class="card-text">{{ $l->angkatan }}</p>
+                        <p class="card-text">{{ $l->kuliah_kerja }}</p>
+                        <p class="card-text">{{ $l->excerpt }}</p>
                         <a id="alumniMore">Selengkapnya</a>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 

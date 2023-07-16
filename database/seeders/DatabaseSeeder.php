@@ -9,6 +9,7 @@ use App\Models\Category;
 use App\Models\Berita;
 use App\Models\Galery;
 use App\Models\Foto;
+use App\Models\Alumni;
 
 class DatabaseSeeder extends Seeder
 {
