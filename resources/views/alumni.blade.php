@@ -15,7 +15,9 @@
                         <p class="card-text">{{ $l->angkatan }}</p>
                         <p class="card-text">{{ $l->kuliah_kerja }}</p>
                         <p class="card-text">{{ $l->excerpt }}</p>
-                        <a id="alumniMore">Selengkapnya</a>
+                        <a href="/alumni?nama={{ $l->nama }}" style="text-decoration:none; color:white;" class="selengkapnya btn btn-primary text-white" data-toggle="modal" data-target="#alumniModal">
+                            <span>selengkapnya </span> 
+                        </a>
                     </div>
                 </div>
             </div>

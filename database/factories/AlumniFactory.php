@@ -22,7 +22,7 @@ class AlumniFactory extends Factory
             'angkatan' => fake()->randomDigit(),
             'kuliah_kerja' => fake()->paragraph(mt_rand(2,3)),
             'kesan' => '<p>'. implode('</p><p>', fake()->paragraphs(mt_rand(5,10))). '</p>',
-            'excerpt' => fake()->paragraph()
+            'excerpt' => fake()->paragraph(10)
         ];
     }
 }
