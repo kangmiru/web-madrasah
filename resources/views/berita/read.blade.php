@@ -3,7 +3,8 @@
 @section('content')
 <section class="blank"></section>
 
-<section class="read">
+{{-- halaman baca --}}
+<section class="default py-5">
     <div class="container pb-5">
         <div class="row mb-3 pt-3">
             <div class="col">

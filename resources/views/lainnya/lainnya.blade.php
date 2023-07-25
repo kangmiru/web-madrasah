@@ -4,7 +4,7 @@
 <section class="blank"></section>
 
 {{-- pendidikan --}}
-<section class="pendidikan pb-5">
+<section class="default pendidikan py-5">
     <div class="container">
         <div class="row">
             @foreach ($units as $l)

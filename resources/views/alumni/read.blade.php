@@ -3,7 +3,8 @@
 @section('content')
 <section class="blank"></section>
 
-<section class="alumni-read">
+{{-- detail alumni --}}
+<section class="default">
   <div class="container">
     <div class="row">
       <div class="col-md-6">

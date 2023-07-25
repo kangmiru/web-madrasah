@@ -4,7 +4,7 @@
 <section class="blank"></section>
 
 {{-- berita --}}
-<section class="berita">
+<section class="default py-5">
     <div class="container">
         <div class="row py-3">
             <div class="col">

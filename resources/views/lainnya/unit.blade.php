@@ -4,7 +4,7 @@
 <section class="blank"></section>
 
 {{-- unit --}}
-<section class="profil">
+<section class="default py-5">
     <div class="container">
         <div class="profil-bg mb-3" style="height: 250px;" data-aos="fade-up" data-aos-duration="1000">
             <div class="judul-profil ms-5 text-white" style="padding-top:150px">

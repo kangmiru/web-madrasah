@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     {{-- My CSS --}}
-    <link rel="stylesheet" href="/css/background.css">
     <link rel="stylesheet" href="/css/cover.css">
     <link rel="stylesheet" href="/css/tombol.css">
-    <link rel="stylesheet" href="/css/foto.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/kontak.css">
     <link rel="stylesheet" href="/css/profil.css">
@@ -33,23 +31,6 @@
   <body>
 
     @include('partials.navbar')
-    
-<!-- background bubble -->
-<!-- <section class="sticky">
-        <div class="bubbles">
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            <div class="bubble"></div>
-            
-          </div>
-        </section> -->
         
     <div>
     @yield('content')

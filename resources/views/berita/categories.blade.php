@@ -4,7 +4,7 @@
 <section class="blank"></section>
 
 {{-- kategori --}}
-<section class="kategori">
+<section class="default py-5">
     <div class="container">
         <div class="row mb-3 pt-3">
             <div class="col">

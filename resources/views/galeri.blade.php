@@ -3,8 +3,9 @@
 @section('content')
 <section class="blank"></section>
 
-<section class="galeri">
-    <div class="container py-5">
+{{-- galeri-kategori --}}
+<section class="default py-5">
+    <div class="container">
         <div class="row justify-content-center">
             @foreach($galeries as $galery)
             <div class="col-md-3">

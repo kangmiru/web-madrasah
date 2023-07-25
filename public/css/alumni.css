@@ -1,0 +1,13 @@
+.alumni-img{
+    height: 150px;
+    width:150px;
+    margin: auto;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.foto-alumni{
+    height: 150px;
+    width: auto;
+    border-radius: 100%;
+}

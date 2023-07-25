@@ -4,7 +4,7 @@
 <section class="blank"></section>
 
 {{-- profil --}}
-<section class="profil">
+<section class="default pt-5">
     <div class="container">
         <div class="profil-bg mb-3" style="height: 250px;" data-aos="fade-up" data-aos-duration="1000">
             <div class="judul-profil ms-5 text-white" style="padding-top:150px">
@@ -75,7 +75,7 @@
 </section>
 
 {{-- visi & misi --}}
-<section class="visi-misi">
+<section class="bg-gradasi">
     <div class="container">
         <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col my-5">
@@ -100,7 +100,7 @@
 </section>
 
 {{-- struktur organisasi --}}
-<section class="struktur-org">
+<section class="default">
     <div class="container">
         <div class="row me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col my-5">
@@ -118,7 +118,7 @@
 </section>
 
 {{-- pimpinan lembaga --}}
-<section class="lembaga">
+<section class="default">
     <div class="container">
         <div class="row py-5 me-0" data-aos="fade-up" data-aos-duration="2000">
             <div class="col">

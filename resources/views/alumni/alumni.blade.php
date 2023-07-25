@@ -3,7 +3,8 @@
 @section('content')
 <section class="blank"></section>
 
-<section class="background">
+{{-- daftar alumni --}}
+<section class="default">
     <div class="container py-5">
         <div class="row justify-content-center">
             @foreach($lulusan as $l)
