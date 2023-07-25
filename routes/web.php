@@ -91,4 +91,4 @@ Route::get('/videos/video', function(){
 
 // route ke halaman alumni
 Route::get('/alumni', [AlumniController::class, 'index']);
-Route::get('/alumni/{slug}', [AlumniController::class, 'show']);
+Route::get('/alumni/{lulusan:slug}', [AlumniController::class, 'show']);

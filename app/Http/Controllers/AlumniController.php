@@ -11,16 +11,16 @@ class AlumniController extends Controller
         return view('/alumni/alumni',[
             'title' => 'Alumni',
             'active' => 'alumni',
-            'lulusan' => Alumni::latest()->paginate(12)->withQueryString()
+            'lulusan' => Alumni::latest()->paginate(9)->withQueryString()
         ]);
     }
 
-    public function show(Alumni $alumnni)
+    public function show(Alumni $lulusan)
     {
         return view('/alumni/read',[
             'title' => 'Alumni',
             'active' => 'alumni',
-            'detail' => $alumnni
+            'detail' => $lulusan
         ]);
     }
 }

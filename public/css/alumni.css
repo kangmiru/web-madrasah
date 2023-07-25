@@ -11,3 +11,9 @@
     width: auto;
     border-radius: 100%;
 }
+
+.read-alumni{
+    width:250px;
+    border-radius: 25%;
+    border: 1px solid gray;
+}
