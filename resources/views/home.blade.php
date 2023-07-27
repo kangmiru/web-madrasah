@@ -134,34 +134,38 @@
 
     <!-- kata alumni -->
     <section>
-        <div class="alumni pb-5">
+        <div class="alumni pb-5 text-light">
             <h2 class="text-center py-5">Kata Alumni</h2>
             <div class="container review">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators" style="">
+                    <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class=" text-center pt-3 mb-3">
-                                <h4>Nama</h4>
-                                <p>pekerjaan/jenjang lanjutan</p>
-                                <img src="/img/oke1.png" class="foto-alumni">
-                                <p>lulusan</p>
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
-                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class=" text-center pt-3 mb-3">
-                                <h4>Nama</h4>
-                                <p>pekerjaan/jenjang lanjutan</p>
-                                <img src="/img/oke1.png" class="foto-alumni">
-                                <p>lulusan</p>
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, vel eius doloribus ea ex consequuntur veniam dignissimos! Aspernatur, numquam perferendis, accusamus magni ratione provident rerum vero ducimus dolorum tempora assumenda, dolor dicta. Distinctio, inventore! Fugit impedit obcaecati eaque, pariatur aspernatur id. Commodi maiores esse aut perspiciatis hic dicta, sed aliquam.</p>
-                             </div>
-                        </div>
+                        @if($alumni->count())
+                            <div class="carousel-item active">
+                                <div class=" text-center pt-3 mb-3">
+                                    <h4>{{ $alumni[0]->nama }}</h4>
+                                    <p>{{ $alumni[0]->kuliah_kerja }}</p>
+                                    <img src="/img/oke1.png" class="foto-alumni">
+                                    <p>{{ $alumni[0]->angkatan }}</p>
+                                    <p class="mb-5">{{  $alumni[0]->excerpt  }}</p>
+                                </div>
+                            </div>
+                            @foreach($alumni->skip(1) as $a)
+                                <div class="carousel-item">
+                                    <div class=" text-center pt-3 mb-3">
+                                        <h4>{{ $a->nama }}</h4>
+                                        <p>{{ $a->kuliah_kerja }}</p>
+                                        <img src="/img/oke1.png" class="foto-alumni">
+                                        <p>{{ $a->angkatan }}</p>
+                                        <p class="mb-5">{{  $a->excerpt  }}</p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
                 </div>
             </div>
         </div>
@@ -218,7 +222,7 @@
             <div class="row me-0 d-flex justify-content-center ms-auto">
             @foreach ($berita as $b)
                 <div class="col-md-4 mb-3">
-                    <div class="card card-berita">
+                    <div class="card card-berita" style="height:650px">
                         <img src="https://source.unsplash.com/500x500/?{{ $b->category->name }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">{{ $b->title }}</h5>

@@ -19,7 +19,7 @@ class FotoFactory extends Factory
         return [
             'name' => fake()->sentence(mt_rand(2,3)),
             'slug' => fake()->slug(),
-            'caption' => fake()->paragraph(),
+            'caption' => fake()->sentence(mt_rand(2,3)),
             'galery_id' => mt_rand(1,2)
         ];
     }
